@@ -1,0 +1,42 @@
+name: social_networking_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  loading_indicator: ^3.1.1
+  google_fonts: ^6.3.0
+  provider: ^6.1.5+1
+  flutter_svg: ^2.2.0
+
+  cupertino_icons: ^1.0.8
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icons_logo.png"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^5.0.0
+
+
+
+flutter:
+  assets:
+    - assets/vectors/
+    - assets/images/
+    - assets/google_fonts/
+
+  uses-material-design: true
+
