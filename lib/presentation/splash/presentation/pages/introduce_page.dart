@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:social_networking_app/core/configs/assets/app_vectors.dart';
 import 'package:social_networking_app/core/configs/theme/app_dimensions.dart';
 import 'package:social_networking_app/core/configs/theme/app_typography.dart';
 
 import '../../../../core/configs/theme/app_colors.dart';
+import '../../../../core/navigation/app_routes.dart';
+import '../../../../core/navigation/navigation_service.dart';
 
 class IntroducePage extends StatelessWidget {
   const IntroducePage({super.key});
@@ -57,7 +58,9 @@ class IntroducePage extends StatelessWidget {
                   color: AppColors.darkMidnightBlue),
               const SizedBox(height: 30),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  NavigationService.pushNamed(AppRoutes.signup);
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.dodgerBlue,
                   foregroundColor: Colors.white,

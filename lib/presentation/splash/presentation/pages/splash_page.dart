@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:social_networking_app/core/configs/assets/app_vectors.dart';
 import 'package:social_networking_app/core/configs/theme/app_colors.dart';
-import 'package:social_networking_app/core/configs/theme/app_dimensions.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -16,7 +15,10 @@ class _SplashPageState extends State<SplashPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: false ? AppColors.lightSkyBlue : AppColors.darkTheme,
+      backgroundColor:
+          MediaQuery.of(context).platformBrightness == Brightness.light
+              ? AppColors.lightSkyBlue
+              : AppColors.darkTheme,
       body: Stack(
         children: [
           Center(
