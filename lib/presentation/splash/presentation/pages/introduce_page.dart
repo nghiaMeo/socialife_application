@@ -52,14 +52,14 @@ class IntroducePage extends StatelessWidget {
                 height: 120,
               ),
               const Spacer(),
-              AppTypography.headerTitleRegular(
+              AppTypography.text24Regular(
                   text:
                       "Discover & join groups easily\nthat fit your needs perfectly!",
                   color: AppColors.darkMidnightBlue),
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  NavigationService.pushNamed(AppRoutes.signup);
+                  NavigationService.pushNamedAndRemoveUntil(AppRoutes.login);
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.dodgerBlue,
@@ -70,7 +70,7 @@ class IntroducePage extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 60, vertical: 14),
                 ),
-                child: AppTypography.textRegularMedium(
+                child: AppTypography.text16Medium(
                   text: "Get Started",
                   color: AppColors.lightTheme,
                 ),

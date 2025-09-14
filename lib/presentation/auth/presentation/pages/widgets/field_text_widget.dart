@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:social_networking_app/core/configs/assets/app_vectors.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:social_networking_app/core/configs/theme/app_colors.dart';
+import 'package:social_networking_app/core/configs/theme/app_typography.dart';
 
 class FieldTextWidget extends StatelessWidget {
-  final IconData icon;
+  final String icon;
+  final String label;
   final String hint;
   final bool isPassword;
 
   const FieldTextWidget({
     super.key,
     required this.icon,
+    required this.label,
     required this.hint,
     this.isPassword = false,
   });
@@ -20,30 +24,36 @@ class FieldTextWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // Label
-        Text(
-          "Name",
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
+        AppTypography.text16Medium(
+          text: label,
+          color: AppColors.darkTheme,
         ),
         const SizedBox(height: 8),
-        // Row chứa icon + textfield
         Row(
           children: [
-            SvgPicture.asset(AppVectors.user),
+            SvgPicture.asset(icon),
             const SizedBox(width: 8),
             Expanded(
               child: TextField(
+                style: GoogleFonts.roboto(
+                    color: Colors.black.withOpacity(0.8),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 16),
+                cursorColor: AppColors.darkMidnightBlue,
+                obscureText: isPassword,
                 decoration: InputDecoration(
                   hintText: hint,
-                  border: InputBorder.none, // bỏ viền
+                  hintStyle: TextStyle(
+                      color: Colors.black.withOpacity(0.5),
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w400),
+                  border: InputBorder.none,
                 ),
               ),
             ),
           ],
         ),
         const Divider(
-          // underline giống hình
           thickness: 1,
           color: Colors.black,
         ),

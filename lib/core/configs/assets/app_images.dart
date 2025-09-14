@@ -1,6 +1,6 @@
 class AppVectors{
-  static const basePath = 'assets/vectors/';
-  static const format = '.svg';
+  static const basePath = 'assets/images/';
+  static const format = '.png';
   static const logo = '${basePath}logo_app$format';
   static const calender = '${basePath}calender$format';
   static const discover = '${basePath}discover$format';
@@ -17,7 +17,5 @@ class AppVectors{
   static const backgroundIcons = '${basePath}background_icons$format';
   static const drawWhite = '${basePath}draw_white$format';
   static const lockPassword = '${basePath}lock_password$format';
-  static const apple = '${basePath}apple$format';
-  static const google = '${basePath}google$format';
 
 }
