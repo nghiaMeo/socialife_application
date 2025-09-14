@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:social_networking_app/core/navigation/app_router.dart';
 import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/auth_forms_option_widget.dart';
 import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/button_widget.dart';
 import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/field_text_widget.dart';

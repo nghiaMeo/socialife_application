@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
 import 'package:social_networking_app/core/configs/theme/app_theme.dart';
 import 'package:social_networking_app/core/navigation/app_router.dart';
 import 'package:social_networking_app/core/navigation/app_routes.dart';
-import 'package:social_networking_app/presentation/auth/presentation/provider/checkbox_provider.dart';
 
 import 'core/navigation/navigation_service.dart';
 
@@ -19,12 +17,7 @@ void main() {
     ),
   );
   runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => CheckboxProvider()),
-      ],
-      child: const MyApp(),
-    ),
+    const MyApp(),
   );
 }
 

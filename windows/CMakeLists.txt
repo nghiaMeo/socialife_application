@@ -2,8 +2,8 @@
 cmake_minimum_required(VERSION 3.14)
 project(social_networking_app LANGUAGES CXX)
 
-# The name of the executable created for the providers. Change this to change
-# the on-disk name of your providers.
+# The name of the executable created for the repositories. Change this to change
+# the on-disk name of your repositories.
 set(BINARY_NAME "social_networking_app")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
@@ -54,7 +54,7 @@ add_subdirectory("runner")
 
 
 # Generated plugin build rules, which manage building the plugins and adding
-# them to the providers.
+# them to the repositories.
 include(flutter/generated_plugins.cmake)
 
 

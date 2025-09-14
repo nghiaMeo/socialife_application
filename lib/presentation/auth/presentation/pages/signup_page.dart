@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:social_networking_app/core/configs/assets/app_vectors.dart';
 import 'package:social_networking_app/core/configs/theme/app_colors.dart';
 import 'package:social_networking_app/core/configs/theme/app_typography.dart';
@@ -6,8 +7,22 @@ import 'package:social_networking_app/presentation/auth/presentation/pages/widge
 import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/button_widget.dart';
 import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/field_text_widget.dart';
 
+import '../provider/checkbox_provider.dart';
+
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (_) => CheckboxProvider(),
+      child: const _SignUpPage(),
+    );
+  }
+}
+
+class _SignUpPage extends StatelessWidget {
+  const _SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {

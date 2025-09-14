@@ -59,7 +59,7 @@ class IntroducePage extends StatelessWidget {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  NavigationService.pushNamedAndRemoveUntil(AppRoutes.login);
+                  NavigationService.pushNamedAndRemoveUntil(AppRoutes.interest);
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.dodgerBlue,

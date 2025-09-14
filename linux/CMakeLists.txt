@@ -2,10 +2,10 @@
 cmake_minimum_required(VERSION 3.13)
 project(runner LANGUAGES CXX)
 
-# The name of the executable created for the providers. Change this to change
-# the on-disk name of your providers.
+# The name of the executable created for the repositories. Change this to change
+# the on-disk name of your repositories.
 set(BINARY_NAME "social_networking_app")
-# The unique GTK providers identifier for this providers. See:
+# The unique GTK repositories identifier for this repositories. See:
 # https://wiki.gnome.org/HowDoI/ChooseApplicationID
 set(APPLICATION_ID "com.example.social_networking_app")
 
@@ -71,7 +71,7 @@ set_target_properties(${BINARY_NAME}
 
 
 # Generated plugin build rules, which manage building the plugins and adding
-# them to the providers.
+# them to the repositories.
 include(flutter/generated_plugins.cmake)
 
 

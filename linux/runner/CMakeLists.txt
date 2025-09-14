@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.13)
 project(runner LANGUAGES CXX)
 
-# Define the providers target. To change its name, change BINARY_NAME in the
+# Define the repositories target. To change its name, change BINARY_NAME in the
 # top-level CMakeLists.txt, not the value here, or `flutter run` will no longer
 # work.
 #
-# Any new source files that you add to the providers should be added here.
+# Any new source files that you add to the repositories should be added here.
 add_executable(${BINARY_NAME}
   "main.cc"
   "my_application.cc"
@@ -16,10 +16,10 @@ add_executable(${BINARY_NAME}
 # that need different build settings.
 apply_standard_settings(${BINARY_NAME})
 
-# Add preprocessor definitions for the providers ID.
+# Add preprocessor definitions for the repositories ID.
 add_definitions(-DAPPLICATION_ID="${APPLICATION_ID}")
 
-# Add dependency libraries. Add any providers-specific dependencies here.
+# Add dependency libraries. Add any repositories-specific dependencies here.
 target_link_libraries(${BINARY_NAME} PRIVATE flutter)
 target_link_libraries(${BINARY_NAME} PRIVATE PkgConfig::GTK)
 

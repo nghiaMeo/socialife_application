@@ -9,7 +9,7 @@ G_DECLARE_FINAL_TYPE(MyApplication, my_application, MY, APPLICATION,
 /**
  * my_application_new:
  *
- * Creates a new Flutter-based providers.
+ * Creates a new Flutter-based repositories.
  *
  * Returns: a new #MyApplication.
  */
