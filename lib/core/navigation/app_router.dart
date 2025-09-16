@@ -8,8 +8,8 @@ import '../../presentation/interest/domain/usecases/get_interests.dart';
 import '../../presentation/interest/domain/usecases/toggle_interest.dart';
 import '../../presentation/interest/pages/interest_selection_page.dart';
 import '../../presentation/interest/provider/interest_provider.dart';
-import '../../presentation/splash/presentation/pages/introduce_page.dart';
-import '../../presentation/splash/presentation/pages/splash_page.dart';
+import '../../presentation/intro/presentation/pages/introduce_page.dart';
+
 import 'app_routes.dart';
 
 
@@ -23,7 +23,7 @@ class AppRouter {
       create: (_) => CheckboxProvider(),
       child: const SignupPage(),
     ),
-    AppRoutes.splash: (context) => const SplashPage(),
+    // AppRoutes.splash: (context) => const SplashPage(),
     AppRoutes.introduce: (context) => const IntroducePage(),
     AppRoutes.interest: (context) {
       final repo = InterestRepositoryImpl();

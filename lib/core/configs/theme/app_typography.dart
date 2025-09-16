@@ -266,4 +266,26 @@ class AppTypography {
       ),
     );
   }
+
+  static Widget decorateText(
+      {required double fontSize,
+      required String text,
+      required Color color,
+      required FontWeight fontWeight,
+      required FontStyle fontStyle,
+      required TextDecoration decoration}) {
+    return Text(
+      text,
+      style: GoogleFonts.roboto(
+        textStyle: TextStyle(
+            color: color,
+            fontWeight: fontWeight,
+            fontStyle: fontStyle,
+            fontSize: fontSize,
+            decoration: decoration,
+            decorationColor: color,
+            decorationThickness: 2),
+      ),
+    );
+  }
 }
