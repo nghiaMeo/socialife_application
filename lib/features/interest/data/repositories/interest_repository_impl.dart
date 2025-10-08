@@ -1,4 +1,4 @@
-import 'package:social_networking_app/presentation/interest/domain/repositories/interest_repository.dart';
+import 'package:social_networking_app/features/interest/domain/repositories/interest_repository.dart';
 
 import '../../domain/entities/interest.dart';
 

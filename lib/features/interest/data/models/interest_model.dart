@@ -1,4 +1,4 @@
-import 'package:social_networking_app/presentation/interest/domain/entities/interest.dart';
+import 'package:social_networking_app/features/interest/domain/entities/interest.dart';
 
 class InterestModel extends Interest {
   const InterestModel({

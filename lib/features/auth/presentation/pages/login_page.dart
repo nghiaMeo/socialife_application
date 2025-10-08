@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/auth_forms_option_widget.dart';
-import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/button_widget.dart';
-import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/field_text_widget.dart';
+import 'package:social_networking_app/features/auth/presentation/pages/widgets/auth_forms_option_widget.dart';
+import 'package:social_networking_app/features/auth/presentation/pages/widgets/button_widget.dart';
+import 'package:social_networking_app/features/auth/presentation/pages/widgets/field_text_widget.dart';
 
 import '../../../../core/configs/assets/app_vectors.dart';
 import '../../../../core/configs/theme/app_colors.dart';

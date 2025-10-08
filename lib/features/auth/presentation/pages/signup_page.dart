@@ -3,9 +3,9 @@ import 'package:provider/provider.dart';
 import 'package:social_networking_app/core/configs/assets/app_vectors.dart';
 import 'package:social_networking_app/core/configs/theme/app_colors.dart';
 import 'package:social_networking_app/core/configs/theme/app_typography.dart';
-import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/auth_forms_option_widget.dart';
-import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/button_widget.dart';
-import 'package:social_networking_app/presentation/auth/presentation/pages/widgets/field_text_widget.dart';
+import 'package:social_networking_app/features/auth/presentation/pages/widgets/auth_forms_option_widget.dart';
+import 'package:social_networking_app/features/auth/presentation/pages/widgets/button_widget.dart';
+import 'package:social_networking_app/features/auth/presentation/pages/widgets/field_text_widget.dart';
 
 import '../provider/checkbox_provider.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:social_networking_app/presentation/interest/domain/usecases/get_interests.dart';
-import 'package:social_networking_app/presentation/interest/domain/usecases/toggle_interest.dart';
+import 'package:social_networking_app/features/interest/domain/usecases/get_interests.dart';
+import 'package:social_networking_app/features/interest/domain/usecases/toggle_interest.dart';
 
 import '../domain/entities/interest.dart';
 
